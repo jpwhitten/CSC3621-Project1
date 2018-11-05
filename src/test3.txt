@@ -1,0 +1,47 @@
+CSC2024 – Coursework 1
+
+For this piece of coursework I was asked to create a database for a bus transport service. First I was given an entity relationship diagram to fix according to the specification.
+
+
+I fixed the diagram by underlining the primary keys, adding the many to many relationship and adding the email field to the operator entity. I also added a bold line to the Route to uses relationship as it is an absolute relationship, a route requires two bus stops.  
+I was the asked to implement the Tables I thought the database would need. First I created the ‘BusStop’ table.
+ 
+
+Next I created the ‘Route’ table.
+ 
+Then the ‘Operator’ table.
+ 
+Then I created the link table ‘Operates’ to show the relationship between Route and Operator.
+ 
+I then realised that I would need foreign keys in the Route table’s Start and Destination fields that references the ID field in the BusStop table.
+ 
+Queries
+
+I then inserted the data I was given into my database and was told to develop a selection of queries that will be run on the data.
+What is the location of the bus stop with the lowest stop ID?
+ 
+Which produced the following result:
+ 
+
+How many different routes serve the Railway Station?
+ 
+Which produced the following result:
+ 
+
+How many bus journeys per hour are operated by OK Travel?
+ 
+Which produced the following result:
+ 
+List the name and phone number of the bus operators serving the Park Gates.
+ 
+Which produced the following result:
+ 
+
+iv) I was then asked to produce another Diagram based on changes to the specification.
+
+v) The changes I would make are as follows:
+•	Get rid of Start and Destination fields from the Route table.
+•	Implement the ‘Stops At’ Table as a matching table that links Route Numbers to Bus Stop IDs, both foreign keys that refer to RouteNumber in Route and ID in BusStop.
+•	Then for every bust stop on a route add a row to ‘Stops At’ which will contain the BusStop ID and the RouteNumber that services it.
+
+
